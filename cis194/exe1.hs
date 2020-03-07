@@ -25,4 +25,4 @@ toDigitsRev number = reverse (toDigits number)
 
 main :: IO ()
 main = do
-  print (toDigits 123 ++ toDigitsRev 123 ++ [0])
+  print (toDigits 123 ++ [0] ++ toDigitsRev 123)
