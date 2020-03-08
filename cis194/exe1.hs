@@ -9,16 +9,16 @@
 import Data.Fixed
 
 getFirstDigit :: Integer -> Integer
-getFirstDigit number = number `mod` 10
+getFirstDigit number = mod number 10
 
 
 getDigitAt :: Integer -> Integer -> Integer
 getDigitAt number 0 = getFirstDigit number
-getDigitAt number position = getDigitAt (number `div` 10) (position - 1)
+getDigitAt number position = getDigitAt (div number 10) (position - 1)
 
 toDigits :: Integer -> [Integer]
 toDigits 0      = []
-toDigits number =  toDigits (number `div` 10) ++ [(getFirstDigit number)]
+toDigits number =  toDigits (div number 10) ++ [(getFirstDigit number)]
 
 toDigitsRev :: Integer -> [Integer]
 toDigitsRev number = reverse (toDigits number)
