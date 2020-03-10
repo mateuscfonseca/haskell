@@ -1,0 +1,80 @@
+a c		1
+a b
+c b
+a c
+
+b a		5
+b c
+a c
+a b
+
+c b		9
+c a
+b a
+c b
+
+a c		13
+a b
+c b
+a c
+
+b a		17
+b c
+a c
+
+b a		21
+c b
+c a
+b a
+
+b c		25
+a c
+a b
+c b
+
+a c		29
+b a
+b c
+a c
+
+a b		33
+c b
+c a
+b a
+
+c b		37
+a c
+a b
+c b
+
+c a		41
+b a
+b c
+a c
+
+b a		45
+c b
+c a
+b a
+
+c b		49
+a c
+a b
+c b
+
+a c		53
+b a
+b c
+a c
+
+a b		57
+c b
+c a
+b a
+
+c b		61
+a c
+a b
+b c
+
+a c
