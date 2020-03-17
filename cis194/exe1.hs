@@ -27,7 +27,7 @@ doubleEveryOther (x:[]) = [x]
 doubleEveryOther (x:(y:xs)) = [x, y * 2] ++ doubleEveryOther(xs)
 
 -- sumDigits :: [Integer] -> Integer
-sumDigits digitos = sum (map (sum . toDigits) digitos )
+sumDigits digitos = sum (map (sum . toDigits) digitos)
 
 -- validate :: Integer -> Bool
 validate cardNumber = ((mod . (sumDigits . (reverse . doubleEveryOther . toDigitsRev))) cardNumber 10) == 0
