@@ -1,0 +1,84 @@
+a c			a b			1
+a b			a c
+c b			b c
+a c			a b			4
+
+b a			c a
+b c			c b
+a c			a b			7
+a b			a c
+
+c b			b c
+c a			b a			10
+b a			c a
+c b			b c
+
+a c			a b			13
+a b			a c
+c b			b c
+a c			a b			16
+
+b a			c a
+b c			c b
+
+a c			a b			19
+b a			c a
+c b			b c
+
+c a			b a			22
+b a			c a
+b c			c b
+
+a c			a b			25
+a b			a c
+c b			b c
+
+a c			a b			28
+b a			c a
+b c			c b
+
+a c			a b			31
+a b			a c
+c b			b c
+
+c a			b a			34
+b a			c a
+c b			b c
+
+a c			a b			37
+a b			a c
+c b			b c
+
+c a			b a			40
+b a			c a
+b c			c b
+
+a c			a b			43
+b a			c a
+c b			b c
+
+c a			b a			46
+b a			c a
+c b			b c
+
+a c			a b			49
+a b			a c
+c b			b c
+
+a c			a b			52
+b a			c a
+b c			c b
+
+a c			a b			55
+a b			a c
+c b			b c
+
+c a			b a			58
+b a			c a
+c b			b c
+
+a c			a b			61
+a b			a c
+b c
+
+a c
