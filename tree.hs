@@ -6,6 +6,9 @@ data Tree a = Node {
         | Empty
           deriving (Show, Eq)
 
+data List a = Cons a (List a)
+              | Nil
+
 type IntTree = (Tree Integer)
 type StrTree = (Tree String)
 
