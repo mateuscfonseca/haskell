@@ -6,7 +6,7 @@ length' [] = 0
 length' xs = 1 + length' (tail xs)
 
 -- ================================
--- EX 2
+-- EX 3
 -- ================================
 mean :: [Integer] -> Double
 mean []     = 0.0
@@ -15,15 +15,23 @@ mean xs     = sum' / size
                     size = fromIntegral (length' xs)
 
 -- ================================
--- EX 3
+-- EX 4
 -- ================================
 toPal :: [a] -> [a]
 toPal [] = []
 toPal xs = xs ++ reverse xs
 
 -- ================================
--- EX 4
+-- EX 5
 -- ================================
 isPal :: [a] -> Bool
 isPal [] = True
 isPal xs = xs == reverse xs
+
+-- ================================
+-- EX 6
+-- ================================
+sortGT (a, b) (a', b')
+    | a < a'  = GT
+    | a > a'  = LT
+    | a == a' = compare b b'
