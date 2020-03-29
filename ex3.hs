@@ -34,8 +34,8 @@ isPal xs = xs == (reverse xs)
 -- ================================
 -- Sort list of lists by sub-lists size
 sort' :: (Foldable t, Ord (t a)) => [t a] -> [t a]
-sort' xs = xs'
-           where xs'    = map snd sorted
+sort' xs = map snd sorted
+           where
                  sorted = sort pairs
                  pairs  = zip sizes xs
                  sizes  = map length xs
