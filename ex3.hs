@@ -1,3 +1,4 @@
+import Data.List
 -- ================================
 -- EX 1
 -- ================================
@@ -24,17 +25,20 @@ toPal xs = xs ++ reverse xs
 -- ================================
 -- EX 5
 -- ================================
-isPal :: [a] -> Bool
+isPal :: Eq a => [a] -> Bool
 isPal [] = True
-isPal xs = xs == reverse xs
+isPal xs = xs == (reverse xs)
 
-sortGT (a, b) (a', b')
 -- ================================
 -- EX 6
 -- ================================
-    | a < a'  = GT
-    | a > a'  = LT
-    | a == a' = compare b b'
--- ================================
--- EX 6
--- ================================
+-- Sort list of lists by sub-lists size
+sort' :: (Foldable t, Ord (t a)) => [t a] -> [t a]
+sort' xs = map snd sorted
+           where
+                 sorted = sort pairs
+                 pairs  = zip sizes xs
+                 sizes  = map length xs
+
+sort'' xs = map sort (sort' xs)
+sortr  xs = reverse (sort'' xs)
